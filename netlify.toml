@@ -3,6 +3,6 @@
   publish = "build"
 
 [template.environment]
-  REACT_APP_LIFERAY_API = https://webserver-lctaxatrialdemo-prd.lfr.cloud
-  REACT_APP_LIFERAY_USER = test@liferay.com
-  REACT_APP_LIFERAY_PASSWORD =Liferay123
+  REACT_APP_LIFERAY_API = "https://webserver-lctaxatrialdemo-prd.lfr.cloud"
+  REACT_APP_LIFERAY_USER = "test@liferay.com"
+  REACT_APP_LIFERAY_PASSWORD ="Liferay123"
