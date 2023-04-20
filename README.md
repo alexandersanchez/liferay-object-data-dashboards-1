@@ -124,6 +124,25 @@ So many ways to use Remote Apps!! *Yey!*
 1. Using 'yarn start' start the server. It should hit Liferay's headless API using Basic Authentication (test@liferay.com:test over port 8080)
  
 2. Once the server is running, you should be able to see the application running on it's own server at http://localhost:3000/ or similar. 
+
+
+
+### Common Problem running YArn and how to solve 
+
+you have to execute this 
+
+rm -rf node_modules yarn.lock
+yarn add -D react-scripts@latest
+yarn build
+For npm:
+
+rm -rf node_modules package-lock.json
+npm install -D react-scripts@latest
+npm install
+npm run build
+
+
+
  
 ## Display Method B - Remote App's iFrame 
   
@@ -218,16 +237,5 @@ Similar to Option 2, however once the files are created they are added to the Li
 
 
 
-if you have problem running yarn 
 
-you have to execute this 
 
-rm -rf node_modules yarn.lock
-yarn add -D react-scripts@latest
-yarn build
-For npm:
-
-rm -rf node_modules package-lock.json
-npm install -D react-scripts@latest
-npm install
-npm run build
