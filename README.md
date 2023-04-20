@@ -215,3 +215,19 @@ Save, then this application will be available in your widgets list.
    *NOTE: Choose this method when you are working on a live server that you DO NOT have file system control over (LOL/SaaS/Site or Portal Administrator) and you do not have access to run a separate live react server.* 
 
 Similar to Option 2, however once the files are created they are added to the Liferay Document Library (or any public online resource - Google Drive, etc) and hosted using Resource URLs. 
+
+
+
+if you have problem running yarn 
+
+you have to execute this 
+
+rm -rf node_modules yarn.lock
+yarn add -D react-scripts@latest
+yarn build
+For npm:
+
+rm -rf node_modules package-lock.json
+npm install -D react-scripts@latest
+npm install
+npm run build
