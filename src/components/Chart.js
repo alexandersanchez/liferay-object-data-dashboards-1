@@ -4,8 +4,10 @@ import FusionCharts from 'fusioncharts';
 import Charts from 'fusioncharts/fusioncharts.charts';
 import ReactFC from 'react-fusioncharts';
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
-
+import {Buffer} from 'buffer';
 import LiferayApi from '../common/services/liferay/api';
+Buffer.from('anything','base64');
+window.Buffer = window.Buffer || require("buffer").Buffer;
 
 ReactFC.fcRoot(FusionCharts, Charts, FusionTheme);
 
